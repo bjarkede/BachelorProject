@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4518FF7D-31E5-5989-5AFE-4731462A8F17}</ProjectGuid>
+    <RootNamespace>Bachelor</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.10240.0</WindowsTargetPlatformMinVersion>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\..\..\bin_debug\</OutDir>
+    <IntDir>obj\x64\Debug\Bachelor\</IntDir>
+    <TargetName>Bachelor</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\..\..\bin_release\</OutDir>
+    <IntDir>obj\x64\Release\Bachelor\</IntDir>
+    <TargetName>Bachelor</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>/nologo /wd4244 /wd4267 /Ob0  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS=1;_CRT_NONSTDC_NO_WARNINGS=1;_DEBUG=1;DEBUG=1;IMGUI_IMPL_WIN32_DISABLE_GAMEPAD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(IntDir)Bachelor.compile.pdb</ProgramDataBaseFileName>
+      <DiagnosticsFormat>Caret</DiagnosticsFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS=1;_CRT_NONSTDC_NO_WARNINGS=1;_DEBUG=1;DEBUG=1;IMGUI_IMPL_WIN32_DISABLE_GAMEPAD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)Bachelor.pdb</ProgramDatabaseFile>
+      <AdditionalDependencies>user32.lib;d3d11.lib;dxguid.lib;;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)Bachelor.exe</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>/nologo /wd4244 /wd4267 /Ob2 /GL  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS=1;_CRT_NONSTDC_NO_WARNINGS=1;IMGUI_IMPL_WIN32_DISABLE_GAMEPAD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(IntDir)Bachelor.compile.pdb</ProgramDataBaseFileName>
+      <DiagnosticsFormat>Caret</DiagnosticsFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS=1;_CRT_NONSTDC_NO_WARNINGS=1;IMGUI_IMPL_WIN32_DISABLE_GAMEPAD;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)Bachelor.pdb</ProgramDatabaseFile>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>user32.lib;d3d11.lib;dxguid.lib;;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)Bachelor.exe</OutputFile>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalOptions>/LTCG %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\code\common\dynamic_array.h" />
+    <ClInclude Include="..\..\code\common\math.h" />
+    <ClInclude Include="..\..\code\common\shared.h" />
+    <ClInclude Include="..\..\code\common\static_array.h" />
+    <ClInclude Include="..\..\code\common\static_hash_map.h" />
+    <ClInclude Include="..\..\code\imgui\imconfig.h" />
+    <ClInclude Include="..\..\code\imgui\imgui.h" />
+    <ClInclude Include="..\..\code\imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="..\..\code\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="..\..\code\imgui\imgui_internal.h" />
+    <ClInclude Include="..\..\code\imgui\imstb_rectpack.h" />
+    <ClInclude Include="..\..\code\imgui\imstb_textedit.h" />
+    <ClInclude Include="..\..\code\imgui\imstb_truetype.h" />
+    <ClInclude Include="..\..\code\renderer\d3d11.h" />
+    <ClInclude Include="..\..\code\renderer\d3d11sdklayers.h" />
+    <ClInclude Include="..\..\code\renderer\d3d11_3.h" />
+    <ClInclude Include="..\..\code\renderer\r_private.h" />
+    <ClInclude Include="..\..\code\renderer\r_public.h" />
+    <ClInclude Include="..\..\code\renderer\r_voxel_private.h" />
+    <ClInclude Include="..\..\code\scene\s_private.h" />
+    <ClInclude Include="..\..\code\scene\s_public.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\code\common\math.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\common\parsing.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\common\shared.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\imgui\imgui.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\imgui\imgui_demo.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\imgui\imgui_draw.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\imgui\imgui_impl_dx11.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\imgui\imgui_impl_win32.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\imgui\imgui_tables.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\imgui\imgui_widgets.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_assets.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_d3d11.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_debug_viz.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_deferred_shading.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_filter.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_gbuffer.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_hiz.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_imgui.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_main.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_pipelines.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_render_command_queue.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_shadows.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_ssso.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_voxel_emittance_bounce.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_voxel_emittance_format_fix.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_voxel_emittance_mip_downsample.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_voxel_emittance_opacity_fix.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_voxel_emittance_voxelization.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_voxel_main.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_voxel_opacity_mip_downsample.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_voxel_opacity_voxelization.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_voxel_vis.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_voxel_voxelization_fix.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\scene\s_assets.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\scene\s_main.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\win32\win32_api.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\win32\win32_main.cpp">
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\code\shaders\cone_tracing.hlsli" />
+    <None Include="..\..\code\shaders\deferred_options.hlsli" />
+    <None Include="..\..\code\shaders\material_flags.hlsli" />
+    <None Include="..\..\code\shaders\shader_constants.hlsli" />
+    <None Include="..\..\code\shaders\shared.hlsli" />
+    <None Include="..\..\code\shaders\voxelization.hlsli" />
+    <None Include="..\..\code\shaders\voxel_types.hlsli" />
+    <None Include="..\premake4.lua" />
+    <None Include="..\txt\last_todo.txt" />
+    <None Include="..\txt\new_todo.txt" />
+    <None Include="..\txt\notes.txt" />
+    <None Include="..\txt\notes_myT.txt" />
+    <None Include="..\txt\todo.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\code\shaders\dear_imgui.hlsl">
+      <FileType>Text</FileType>
+      <Command>if $(ConfigurationName) == Debug ( fxc  /nologo /Od /Zi /T vs_5_0 /E vs_main /Vn g_vs /Fh ../../code/shaders/dear_imgui_vs.h  ../../code/shaders/dear_imgui.hlsl  ) else ( fxc  /nologo /O3 /T vs_5_0 /E vs_main /Vn g_vs /Fh ../../code/shaders/dear_imgui_vs.h  ../../code/shaders/dear_imgui.hlsl  )
+if $(ConfigurationName) == Debug ( fxc  /nologo /Od /Zi /T ps_5_0 /E ps_main /Vn g_ps /Fh ../../code/shaders/dear_imgui_ps.h  ../../code/shaders/dear_imgui.hlsl  ) else ( fxc  /nologo /O3 /T ps_5_0 /E ps_main /Vn g_ps /Fh ../../code/shaders/dear_imgui_ps.h  ../../code/shaders/dear_imgui.hlsl  )
+</Command>
+      <Outputs>../../code/shaders/dear_imgui_vs.h;../../code/shaders/dear_imgui_ps.h;%(Outputs)</Outputs>
+      <SubType>Designer</SubType>
+      <Message></Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\debug_viz.hlsl">
+      <FileType>Text</FileType>
+      <Command>if $(ConfigurationName) == Debug ( fxc  /nologo /Od /Zi /T vs_5_0 /E vs_main /Vn g_vs /Fh ../../code/shaders/debug_viz_vs.h  ../../code/shaders/debug_viz.hlsl  ) else ( fxc  /nologo /O3 /T vs_5_0 /E vs_main /Vn g_vs /Fh ../../code/shaders/debug_viz_vs.h  ../../code/shaders/debug_viz.hlsl  )
+if $(ConfigurationName) == Debug ( fxc  /nologo /Od /Zi /T ps_5_0 /E ps_main /Vn g_ps /Fh ../../code/shaders/debug_viz_ps.h  ../../code/shaders/debug_viz.hlsl  ) else ( fxc  /nologo /O3 /T ps_5_0 /E ps_main /Vn g_ps /Fh ../../code/shaders/debug_viz_ps.h  ../../code/shaders/debug_viz.hlsl  )
+</Command>
+      <Outputs>../../code/shaders/debug_viz_vs.h;../../code/shaders/debug_viz_ps.h;%(Outputs)</Outputs>
+      <SubType>Designer</SubType>
+      <Message></Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\opacity_voxelization.hlsl">
+      <FileType>Text</FileType>
+      <Command>if $(ConfigurationName) == Debug ( fxc  /nologo /Od /Zi /T vs_5_0 /E vs_main /Vn g_vs /Fh ../../code/shaders/opacity_voxelization_vs.h  ../../code/shaders/opacity_voxelization.hlsl  ) else ( fxc  /nologo /O3 /T vs_5_0 /E vs_main /Vn g_vs /Fh ../../code/shaders/opacity_voxelization_vs.h  ../../code/shaders/opacity_voxelization.hlsl  )
+if $(ConfigurationName) == Debug ( fxc /DCONS_RASTER=1  /nologo /Od /Zi /T gs_5_0 /E gs_main /Vn g_gs_cr1 /Fh ../../code/shaders/opacity_voxelization_cr1_gs.h  ../../code/shaders/opacity_voxelization.hlsl  ) else ( fxc /DCONS_RASTER=1  /nologo /O3 /T gs_5_0 /E gs_main /Vn g_gs_cr1 /Fh ../../code/shaders/opacity_voxelization_cr1_gs.h  ../../code/shaders/opacity_voxelization.hlsl  )
+if $(ConfigurationName) == Debug ( fxc  /nologo /Od /Zi /T gs_5_0 /E gs_main /Vn g_gs_cr0 /Fh ../../code/shaders/opacity_voxelization_cr0_gs.h  ../../code/shaders/opacity_voxelization.hlsl  ) else ( fxc  /nologo /O3 /T gs_5_0 /E gs_main /Vn g_gs_cr0 /Fh ../../code/shaders/opacity_voxelization_cr0_gs.h  ../../code/shaders/opacity_voxelization.hlsl  )
+if $(ConfigurationName) == Debug ( fxc /DCONS_RASTER=1  /nologo /Od /Zi /T ps_5_0 /E ps_main /Vn g_ps_cr1 /Fh ../../code/shaders/opacity_voxelization_cr1_ps.h  ../../code/shaders/opacity_voxelization.hlsl  ) else ( fxc /DCONS_RASTER=1  /nologo /O3 /T ps_5_0 /E ps_main /Vn g_ps_cr1 /Fh ../../code/shaders/opacity_voxelization_cr1_ps.h  ../../code/shaders/opacity_voxelization.hlsl  )
+if $(ConfigurationName) == Debug ( fxc  /nologo /Od /Zi /T ps_5_0 /E ps_main /Vn g_ps_cr0 /Fh ../../code/shaders/opacity_voxelization_cr0_ps.h  ../../code/shaders/opacity_voxelization.hlsl  ) else ( fxc  /nologo /O3 /T ps_5_0 /E ps_main /Vn g_ps_cr0 /Fh ../../code/shaders/opacity_voxelization_cr0_ps.h  ../../code/shaders/opacity_voxelization.hlsl  )
+</Command>
+      <Outputs>../../code/shaders/opacity_voxelization_vs.h;../../code/shaders/opacity_voxelization_cr1_gs.h;../../code/shaders/opacity_voxelization_cr0_gs.h;../../code/shaders/opacity_voxelization_cr1_ps.h;../../code/shaders/opacity_voxelization_cr0_ps.h;%(Outputs)</Outputs>
+      <SubType>Designer</SubType>
+      <Message></Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\emittance_voxelization.hlsl">
+      <FileType>Text</FileType>
+      <Command>if $(ConfigurationName) == Debug ( fxc  /nologo /Od /Zi /T vs_5_0 /E vs_main /Vn g_vs /Fh ../../code/shaders/emittance_voxelization_vs.h  ../../code/shaders/emittance_voxelization.hlsl  ) else ( fxc  /nologo /O3 /T vs_5_0 /E vs_main /Vn g_vs /Fh ../../code/shaders/emittance_voxelization_vs.h  ../../code/shaders/emittance_voxelization.hlsl  )
+if $(ConfigurationName) == Debug ( fxc /DCONS_RASTER=1  /nologo /Od /Zi /T gs_5_0 /E gs_main /Vn g_gs_cr1 /Fh ../../code/shaders/emittance_voxelization_cr1_gs.h  ../../code/shaders/emittance_voxelization.hlsl  ) else ( fxc /DCONS_RASTER=1  /nologo /O3 /T gs_5_0 /E gs_main /Vn g_gs_cr1 /Fh ../../code/shaders/emittance_voxelization_cr1_gs.h  ../../code/shaders/emittance_voxelization.hlsl  )
+if $(ConfigurationName) == Debug ( fxc  /nologo /Od /Zi /T gs_5_0 /E gs_main /Vn g_gs_cr0 /Fh ../../code/shaders/emittance_voxelization_cr0_gs.h  ../../code/shaders/emittance_voxelization.hlsl  ) else ( fxc  /nologo /O3 /T gs_5_0 /E gs_main /Vn g_gs_cr0 /Fh ../../code/shaders/emittance_voxelization_cr0_gs.h  ../../code/shaders/emittance_voxelization.hlsl  )
+if $(ConfigurationName) == Debug ( fxc /DCONS_RASTER=1  /nologo /Od /Zi /T ps_5_0 /E ps_main /Vn g_ps_cr1 /Fh ../../code/shaders/emittance_voxelization_cr1_ps.h  ../../code/shaders/emittance_voxelization.hlsl  ) else ( fxc /DCONS_RASTER=1  /nologo /O3 /T ps_5_0 /E ps_main /Vn g_ps_cr1 /Fh ../../code/shaders/emittance_voxelization_cr1_ps.h  ../../code/shaders/emittance_voxelization.hlsl  )
+if $(ConfigurationName) == Debug ( fxc  /nologo /Od /Zi /T ps_5_0 /E ps_main /Vn g_ps_cr0 /Fh ../../code/shaders/emittance_voxelization_cr0_ps.h  ../../code/shaders/emittance_voxelization.hlsl  ) else ( fxc  /nologo /O3 /T ps_5_0 /E ps_main /Vn g_ps_cr0 /Fh ../../code/shaders/emittance_voxelization_cr0_ps.h  ../../code/shaders/emittance_voxelization.hlsl  )
+</Command>
+      <Outputs>../../code/shaders/emittance_voxelization_vs.h;../../code/shaders/emittance_voxelization_cr1_gs.h;../../code/shaders/emittance_voxelization_cr0_gs.h;../../code/shaders/emittance_voxelization_cr1_ps.h;../../code/shaders/emittance_voxelization_cr0_ps.h;%(Outputs)</Outputs>
+      <SubType>Designer</SubType>
+      <Message></Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\voxel_vis.hlsl">
+      <FileType>Text</FileType>
+      <Command>if $(ConfigurationName) == Debug ( fxc  /nologo /Od /Zi /T vs_5_0 /E vs_main /Vn g_vs /Fh ../../code/shaders/voxel_vis_vs.h  ../../code/shaders/voxel_vis.hlsl  ) else ( fxc  /nologo /O3 /T vs_5_0 /E vs_main /Vn g_vs /Fh ../../code/shaders/voxel_vis_vs.h  ../../code/shaders/voxel_vis.hlsl  )
+if $(ConfigurationName) == Debug ( fxc  /nologo /Od /Zi /T gs_5_0 /E gs_main /Vn g_gs /Fh ../../code/shaders/voxel_vis_gs.h  ../../code/shaders/voxel_vis.hlsl  ) else ( fxc  /nologo /O3 /T gs_5_0 /E gs_main /Vn g_gs /Fh ../../code/shaders/voxel_vis_gs.h  ../../code/shaders/voxel_vis.hlsl  )
+if $(ConfigurationName) == Debug ( fxc  /nologo /Od /Zi /T ps_5_0 /E ps_main /Vn g_ps /Fh ../../code/shaders/voxel_vis_ps.h  ../../code/shaders/voxel_vis.hlsl  ) else ( fxc  /nologo /O3 /T ps_5_0 /E ps_main /Vn g_ps /Fh ../../code/shaders/voxel_vis_ps.h  ../../code/shaders/voxel_vis.hlsl  )
+</Command>
+      <Outputs>../../code/shaders/voxel_vis_vs.h;../../code/shaders/voxel_vis_gs.h;../../code/shaders/voxel_vis_ps.h;%(Outputs)</Outputs>
+      <SubType>Designer</SubType>
+      <Message></Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\geometry_pass.hlsl">
+      <FileType>Text</FileType>
+      <Command>if $(ConfigurationName) == Debug ( fxc  /nologo /Od /Zi /T vs_5_0 /E vs_main /Vn g_vs /Fh ../../code/shaders/geometry_pass_vs.h  ../../code/shaders/geometry_pass.hlsl  ) else ( fxc  /nologo /O3 /T vs_5_0 /E vs_main /Vn g_vs /Fh ../../code/shaders/geometry_pass_vs.h  ../../code/shaders/geometry_pass.hlsl  )
+if $(ConfigurationName) == Debug ( fxc  /nologo /Od /Zi /T ps_5_0 /E ps_main /Vn g_ps /Fh ../../code/shaders/geometry_pass_ps.h  ../../code/shaders/geometry_pass.hlsl  ) else ( fxc  /nologo /O3 /T ps_5_0 /E ps_main /Vn g_ps /Fh ../../code/shaders/geometry_pass_ps.h  ../../code/shaders/geometry_pass.hlsl  )
+</Command>
+      <Outputs>../../code/shaders/geometry_pass_vs.h;../../code/shaders/geometry_pass_ps.h;%(Outputs)</Outputs>
+      <SubType>Designer</SubType>
+      <Message></Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\deferred_shading.hlsl">
+      <FileType>Text</FileType>
+      <Command>if $(ConfigurationName) == Debug ( fxc  /nologo /Od /Zi /T vs_5_0 /E vs_main /Vn g_vs /Fh ../../code/shaders/deferred_shading_vs.h  ../../code/shaders/deferred_shading.hlsl  ) else ( fxc  /nologo /O3 /T vs_5_0 /E vs_main /Vn g_vs /Fh ../../code/shaders/deferred_shading_vs.h  ../../code/shaders/deferred_shading.hlsl  )
+if $(ConfigurationName) == Debug ( fxc  /nologo /Od /Zi /T ps_5_0 /E ps_main /Vn g_ps /Fh ../../code/shaders/deferred_shading_ps.h  ../../code/shaders/deferred_shading.hlsl  ) else ( fxc  /nologo /O3 /T ps_5_0 /E ps_main /Vn g_ps /Fh ../../code/shaders/deferred_shading_ps.h  ../../code/shaders/deferred_shading.hlsl  )
+</Command>
+      <Outputs>../../code/shaders/deferred_shading_vs.h;../../code/shaders/deferred_shading_ps.h;%(Outputs)</Outputs>
+      <SubType>Designer</SubType>
+      <Message></Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\shadows.hlsl">
+      <FileType>Text</FileType>
+      <Command>if $(ConfigurationName) == Debug ( fxc  /nologo /Od /Zi /T vs_5_0 /E vs_main /Vn g_vs /Fh ../../code/shaders/shadows_vs.h  ../../code/shaders/shadows.hlsl  ) else ( fxc  /nologo /O3 /T vs_5_0 /E vs_main /Vn g_vs /Fh ../../code/shaders/shadows_vs.h  ../../code/shaders/shadows.hlsl  )
+if $(ConfigurationName) == Debug ( fxc  /nologo /Od /Zi /T gs_5_0 /E gs_main /Vn g_gs /Fh ../../code/shaders/shadows_gs.h  ../../code/shaders/shadows.hlsl  ) else ( fxc  /nologo /O3 /T gs_5_0 /E gs_main /Vn g_gs /Fh ../../code/shaders/shadows_gs.h  ../../code/shaders/shadows.hlsl  )
+if $(ConfigurationName) == Debug ( fxc  /nologo /Od /Zi /T ps_5_0 /E ps_main /Vn g_ps /Fh ../../code/shaders/shadows_ps.h  ../../code/shaders/shadows.hlsl  ) else ( fxc  /nologo /O3 /T ps_5_0 /E ps_main /Vn g_ps /Fh ../../code/shaders/shadows_ps.h  ../../code/shaders/shadows.hlsl  )
+</Command>
+      <Outputs>../../code/shaders/shadows_vs.h;../../code/shaders/shadows_gs.h;../../code/shaders/shadows_ps.h;%(Outputs)</Outputs>
+      <SubType>Designer</SubType>
+      <Message></Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\opacity_mip_downsample.hlsl">
+      <FileType>Text</FileType>
+      <Command>if $(ConfigurationName) == Debug ( fxc  /nologo /Od /Zi /T cs_5_0 /E cs_main /Vn g_cs /Fh ../../code/shaders/opacity_mip_downsample_cs.h  ../../code/shaders/opacity_mip_downsample.hlsl  ) else ( fxc  /nologo /O3 /T cs_5_0 /E cs_main /Vn g_cs /Fh ../../code/shaders/opacity_mip_downsample_cs.h  ../../code/shaders/opacity_mip_downsample.hlsl  )
+</Command>
+      <Outputs>../../code/shaders/opacity_mip_downsample_cs.h;%(Outputs)</Outputs>
+      <SubType>Designer</SubType>
+      <Message></Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\emittance_mip_downsample.hlsl">
+      <FileType>Text</FileType>
+      <Command>if $(ConfigurationName) == Debug ( fxc  /nologo /Od /Zi /T cs_5_0 /E cs_main /Vn g_cs /Fh ../../code/shaders/emittance_mip_downsample_cs.h  ../../code/shaders/emittance_mip_downsample.hlsl  ) else ( fxc  /nologo /O3 /T cs_5_0 /E cs_main /Vn g_cs /Fh ../../code/shaders/emittance_mip_downsample_cs.h  ../../code/shaders/emittance_mip_downsample.hlsl  )
+</Command>
+      <Outputs>../../code/shaders/emittance_mip_downsample_cs.h;%(Outputs)</Outputs>
+      <SubType>Designer</SubType>
+      <Message></Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\emittance_format_fix.hlsl">
+      <FileType>Text</FileType>
+      <Command>if $(ConfigurationName) == Debug ( fxc  /nologo /Od /Zi /T cs_5_0 /E cs_main /Vn g_cs /Fh ../../code/shaders/emittance_format_fix_cs.h  ../../code/shaders/emittance_format_fix.hlsl  ) else ( fxc  /nologo /O3 /T cs_5_0 /E cs_main /Vn g_cs /Fh ../../code/shaders/emittance_format_fix_cs.h  ../../code/shaders/emittance_format_fix.hlsl  )
+</Command>
+      <Outputs>../../code/shaders/emittance_format_fix_cs.h;%(Outputs)</Outputs>
+      <SubType>Designer</SubType>
+      <Message></Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\emittance_opacity_fix.hlsl">
+      <FileType>Text</FileType>
+      <Command>if $(ConfigurationName) == Debug ( fxc  /nologo /Od /Zi /T cs_5_0 /E cs_main /Vn g_cs /Fh ../../code/shaders/emittance_opacity_fix_cs.h  ../../code/shaders/emittance_opacity_fix.hlsl  ) else ( fxc  /nologo /O3 /T cs_5_0 /E cs_main /Vn g_cs /Fh ../../code/shaders/emittance_opacity_fix_cs.h  ../../code/shaders/emittance_opacity_fix.hlsl  )
+</Command>
+      <Outputs>../../code/shaders/emittance_opacity_fix_cs.h;%(Outputs)</Outputs>
+      <SubType>Designer</SubType>
+      <Message></Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\emittance_bounce.hlsl">
+      <FileType>Text</FileType>
+      <Command>if $(ConfigurationName) == Debug ( fxc  /nologo /Od /Zi /T cs_5_0 /E cs_main /Vn g_cs /Fh ../../code/shaders/emittance_bounce_cs.h  ../../code/shaders/emittance_bounce.hlsl  ) else ( fxc  /nologo /O3 /T cs_5_0 /E cs_main /Vn g_cs /Fh ../../code/shaders/emittance_bounce_cs.h  ../../code/shaders/emittance_bounce.hlsl  )
+</Command>
+      <Outputs>../../code/shaders/emittance_bounce_cs.h;%(Outputs)</Outputs>
+      <SubType>Designer</SubType>
+      <Message></Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\voxelization_fix.hlsl">
+      <FileType>Text</FileType>
+      <Command>if $(ConfigurationName) == Debug ( fxc  /nologo /Od /Zi /T cs_5_0 /E cs_main /Vn g_cs /Fh ../../code/shaders/voxelization_fix_cs.h  ../../code/shaders/voxelization_fix.hlsl  ) else ( fxc  /nologo /O3 /T cs_5_0 /E cs_main /Vn g_cs /Fh ../../code/shaders/voxelization_fix_cs.h  ../../code/shaders/voxelization_fix.hlsl  )
+</Command>
+      <Outputs>../../code/shaders/voxelization_fix_cs.h;%(Outputs)</Outputs>
+      <SubType>Designer</SubType>
+      <Message></Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\hiz.hlsl">
+      <FileType>Text</FileType>
+      <Command>if $(ConfigurationName) == Debug ( fxc  /nologo /Od /Zi /T cs_5_0 /E cs_main /Vn g_cs /Fh ../../code/shaders/hiz_cs.h  ../../code/shaders/hiz.hlsl  ) else ( fxc  /nologo /O3 /T cs_5_0 /E cs_main /Vn g_cs /Fh ../../code/shaders/hiz_cs.h  ../../code/shaders/hiz.hlsl  )
+</Command>
+      <Outputs>../../code/shaders/hiz_cs.h;%(Outputs)</Outputs>
+      <SubType>Designer</SubType>
+      <Message></Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\ssso.hlsl">
+      <FileType>Text</FileType>
+      <Command>if $(ConfigurationName) == Debug ( fxc  /nologo /Od /Zi /T ps_5_0 /E ps_main /Vn g_ps /Fh ../../code/shaders/ssso_ps.h  ../../code/shaders/ssso.hlsl  ) else ( fxc  /nologo /O3 /T ps_5_0 /E ps_main /Vn g_ps /Fh ../../code/shaders/ssso_ps.h  ../../code/shaders/ssso.hlsl  )
+if $(ConfigurationName) == Debug ( fxc  /nologo /Od /Zi /T vs_5_0 /E vs_main /Vn g_vs /Fh ../../code/shaders/ssso_vs.h  ../../code/shaders/ssso.hlsl  ) else ( fxc  /nologo /O3 /T vs_5_0 /E vs_main /Vn g_vs /Fh ../../code/shaders/ssso_vs.h  ../../code/shaders/ssso.hlsl  )
+</Command>
+      <Outputs>../../code/shaders/ssso_ps.h;../../code/shaders/ssso_vs.h;%(Outputs)</Outputs>
+      <SubType>Designer</SubType>
+      <Message></Message>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\ssso_filter.hlsl">
+      <FileType>Text</FileType>
+      <Command>if $(ConfigurationName) == Debug ( fxc  /nologo /Od /Zi /T vs_5_0 /E vs_main /Vn g_vs /Fh ../../code/shaders/ssso_filter_vs.h  ../../code/shaders/ssso_filter.hlsl  ) else ( fxc  /nologo /O3 /T vs_5_0 /E vs_main /Vn g_vs /Fh ../../code/shaders/ssso_filter_vs.h  ../../code/shaders/ssso_filter.hlsl  )
+if $(ConfigurationName) == Debug ( fxc  /nologo /Od /Zi /T ps_5_0 /E ps_main /Vn g_ps /Fh ../../code/shaders/ssso_filter_ps.h  ../../code/shaders/ssso_filter.hlsl  ) else ( fxc  /nologo /O3 /T ps_5_0 /E ps_main /Vn g_ps /Fh ../../code/shaders/ssso_filter_ps.h  ../../code/shaders/ssso_filter.hlsl  )
+</Command>
+      <Outputs>../../code/shaders/ssso_filter_vs.h;../../code/shaders/ssso_filter_ps.h;%(Outputs)</Outputs>
+      <SubType>Designer</SubType>
+      <Message></Message>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

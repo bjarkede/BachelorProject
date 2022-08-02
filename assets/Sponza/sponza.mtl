@@ -1,0 +1,376 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 20.08.2010 18:13:43
+
+newmtl leaf
+	Ns 74.509804
+	Ni 1.5000
+	d 0.3
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1 1 1
+	Kd 0.26 0.26 0.19
+	Ks 0.500000 0.500000 0.500000
+	Ke 0.0000 0.0000 0.0000
+	map_Kd sponza_thorn_diff
+	map_d sponza_thorn_mask
+	map_bump sponza_thorn_ddn
+	map_Ks sponza_thorn_spec
+
+newmtl vase_round
+	Ns 74.509804
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1 1 1
+	Kd 1 1 1
+	Ks 0.500000 0.500000 0.500000
+	Ke 0.0000 0.0000 0.0000
+	map_Kd vase_round_diff
+	map_bump vase_round_ddn
+	map_Ks vase_round_spec
+
+newmtl Material__57
+	Ns 74.509804
+	Ni 1.5000
+	d 0.3
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1 1 1 
+	Kd 0.53 0.53 0.25
+	Ks 0.500000 0.500000 0.500000
+	Ke 0.0000 0.0000 0.0000
+	map_Kd vase_plant_diff
+	map_d vase_plant_mask
+	map_Ks vase_plant_spec
+	map_bump vase_plant_ddn
+
+newmtl Material__298
+	Ns 74.509804
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1 1 1 
+	Kd 1 1 1
+	Ks 0.139500 0.139447 0.139447
+	Ke 0.0000 0.0000 0.0000
+	map_Kd background_diff
+	map_bump background_ddn
+	map_Ks background_spec
+
+newmtl bricks
+	Ns 74.509804
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 1 1 1
+	Ks 0.500000 0.500000 0.500000
+	Ke 0.0000 0.0000 0.0000
+	map_Ks sponza_bricks_a_spec
+	map_Kd sponza_bricks_a_diff
+	map_bump sponza_bricks_a_ddn
+
+newmtl arch
+	Ns 74.509804
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1 1 1 
+	Kd 1 1 1
+	Ks 0.500000 0.500000 0.500000
+	Ke 0.0000 0.0000 0.0000
+	map_bump sponza_arch_ddn
+	map_Kd sponza_arch_diff
+	map_Ks sponza_arch_spec
+
+newmtl ceiling
+	Ns 74.509804
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1 1 1 
+	Kd 1 1 1
+	Ks 0.500000 0.500000 0.500000
+	Ke 0.0000 0.0000 0.0000
+	map_Kd sponza_ceiling_a_diff
+	map_Ks sponza_ceiling_a_spec
+	map_bump sponza_ceiling_a_ddn
+
+newmtl column_a
+	Ns 74.509804
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1 1 1 
+	Kd 1 1 1
+	Ks 0.500000 0.500000 0.500000
+	Ke 0.0000 0.0000 0.0000
+	map_Kd sponza_column_a_diff
+	map_bump sponza_column_a_ddn
+	map_Ks sponza_column_a_spec
+
+newmtl floor
+	Ns 74.509804
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1 1 1
+	Kd 1 1 1
+	Ks 0.5000 0.5000 0.5000
+	Ke 0.0000 0.0000 0.0000
+	map_Kd sponza_floor_a_diff
+	map_bump sponza_floor_a_ddn
+	map_Ks sponza_floor_a_spec
+
+newmtl column_c
+	Ns 74.509804
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1 1 1
+	Kd 1 1 1
+	Ks 0.500000 0.500000 0.500000
+	Ke 0.0000 0.0000 0.0000
+	map_Kd sponza_column_c_diff
+	map_bump sponza_column_c_ddn
+	map_Ks sponza_column_c_spec
+
+newmtl details
+	Ns 74.509804
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1 1 1
+	Kd 1 1 1
+	Ks 0.500000 0.500000 0.500000
+	Ke 0.0000 0.0000 0.0000
+	map_Kd sponza_details_diff
+	map_bump sponza_details_ddn
+	map_Ks sponza_details_spec
+
+newmtl column_b
+	Ns 74.509804
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1 1 1
+	Kd 1 1 1
+	Ks 0.500000 0.500000 0.500000
+	Ke 0.0000 0.0000 0.0000
+	map_Kd sponza_column_b_diff
+	map_bump sponza_column_b_ddn
+	map_Ks sponza_column_b_spec
+
+newmtl Material__47
+	Ns 74.509804
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1 1 1
+	Kd 1 1 1
+	Ks 0.2 0.2 0.2
+	Ke 0.0000 0.0000 0.0000
+	map_Kd algorithm_diff
+
+newmtl flagpole
+	Ns 74.509804
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1 1 1
+	Kd 1 1 1
+	Ks 0.500000 0.500000 0.500000
+	Ke 0.0000 0.0000 0.0000
+	map_Kd sponza_flagpole_diff
+	map_bump sponza_flagpole_ddn
+	map_Ks sponza_flagpole_spec
+
+newmtl fabric_e
+	Ns 74.509804
+	Ni 1.000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1 1 1
+	Kd 1 1 1
+	Ks 0.500000 0.500000 0.500000
+	Ke 0.0000 0.0000 0.0000
+	map_Ks sponza_fabric_spec
+	map_bump sponza_fabric_ddn
+	map_Kd sponza_fabric_green_diff
+
+newmtl fabric_d
+	Ns 74.509804
+	Ni 1.000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1 1 1
+	Kd 1 1 1
+	Ks 0.500000 0.500000 0.500000
+	Ke 0.0000 0.0000 0.0000
+	map_Ks sponza_fabric_spec
+	map_Kd sponza_fabric_blue_diff
+	map_bump sponza_fabric_ddn
+
+newmtl fabric_a
+	Ns 74.509804
+	Ni 1.000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1 1 1
+	Kd 1 1 1
+	Ks 0.500000 0.500000 0.500000
+	Ke 0.0000 0.0000 0.0000
+	map_Ks sponza_fabric_spec
+	map_Kd sponza_fabric_red_diff
+	map_bump sponza_fabric_ddn
+
+newmtl fabric_g
+	Ns 74.509804
+	Ni 1.0000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1 1 1
+	Kd 1 1 1
+	Ks 0.500000 0.500000 0.500000
+	Ke 0.0000 0.0000 0.0000
+	map_Ks sponza_curtain_spec
+	map_Kd sponza_curtain_blue_diff
+	map_bump sponza_curtain_ddn
+
+newmtl fabric_c
+	Ns 74.509804
+	Ni 1.0000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1 1 1
+	Kd 1 1 1
+	Ks 0.500000 0.500000 0.500000
+	Ke 0.0000 0.0000 0.0000
+	map_Ks sponza_curtain_spec
+	map_bump sponza_curtain_ddn
+	map_Kd sponza_curtain_red_diff
+
+newmtl fabric_f
+	Ns 74.509804
+	Ni 1.0000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1 1 1
+	Kd 1 1 1
+	Ks 0.500000 0.500000 0.500000
+	Ke 0.0000 0.0000 0.0000
+	map_Ks sponza_curtain_spec
+	map_bump sponza_curtain_ddn
+	map_Kd sponza_curtain_green_diff
+
+newmtl chain
+	Ns 74.509804
+	Ni 1.5000
+	d 0.3000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1 1 1 
+	Kd 0.24 0.26 0.26
+	Ks 0.00 0.000 0.000
+	Ke 0.000 0.000 0.000
+	map_Kd chain_texture_diff
+	map_d chain_texture_mask
+	map_bump chain_texture_ddn
+
+newmtl vase_hanging
+	Ns 74.509804
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1 1 1 
+	Kd 1 1 1
+	Ks 0.5 0.5 0.5
+	Ke 0.0000 0.0000 0.0000
+	map_Kd vase_hanging_diff
+	map_Ks vase_hanging_diff
+	map_bump vase_hanging_ddn
+
+newmtl vase
+	Ns 74.509804
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1 1 1
+	Kd 1 1 1
+	Ks 0.139447 0.139447 0.139447
+	Ke 0.0000 0.0000 0.0000
+	map_Ks vase_spec
+	map_Kd vase_diff
+	map_bump vase_ddn
+
+newmtl Material__25
+	Ns 74.509804
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1 1 1 
+	Kd 1 1 1
+	Ks 0.042150 0.042140 0.042140
+	Ke 0.0000 0.0000 0.0000
+	map_Ks lion_spec
+	map_Kd lion_diff
+	map_bump lion_ddn
+
+newmtl roof
+	Ns 74.509804
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 1 1 1
+	Kd 1 1 1
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_bump sponza_roof_ddn	
+	map_Kd sponza_roof_diff

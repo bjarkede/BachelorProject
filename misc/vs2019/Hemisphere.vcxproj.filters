@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="code">
+      <UniqueIdentifier>{803E957C-6C75-960D-1562-7C100178120F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\tools">
+      <UniqueIdentifier>{6D9736CF-594F-781C-C256-5178AE2D130D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\tools\hemisphere">
+      <UniqueIdentifier>{53F3EE4A-BF5F-AA45-8853-42A3F47ECCAD}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\code\tools\hemisphere\hemisphere.h">
+      <Filter>code\tools\hemisphere</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\code\tools\hemisphere\hemisphere.cpp">
+      <Filter>code\tools\hemisphere</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

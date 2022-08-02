@@ -1,0 +1,5 @@
+vs*/*.suo
+vs*/*.sdf
+vs*/*.opensdf
+vs*/.vs/*
+vs*/obj/*

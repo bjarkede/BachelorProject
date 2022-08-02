@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{77A766BD-E311-1B34-2C50-CCD998F9F888}</ProjectGuid>
+    <RootNamespace>MeshBaker</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.10240.0</WindowsTargetPlatformMinVersion>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>..\..\..\bin_debug\</OutDir>
+    <IntDir>obj\x64\Debug\MeshBaker\</IntDir>
+    <TargetName>MeshBaker</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>..\..\..\bin_release\</OutDir>
+    <IntDir>obj\x64\Release\MeshBaker\</IntDir>
+    <TargetName>MeshBaker</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions>/nologo /wd4244 /wd4267 /Ob0  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS=1;_CRT_NONSTDC_NO_WARNINGS=1;_DEBUG=1;DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(IntDir)MeshBaker.compile.pdb</ProgramDataBaseFileName>
+      <DiagnosticsFormat>Caret</DiagnosticsFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS=1;_CRT_NONSTDC_NO_WARNINGS=1;_DEBUG=1;DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)MeshBaker.pdb</ProgramDatabaseFile>
+      <AdditionalLibraryDirectories>;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)MeshBaker.exe</OutputFile>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions>/nologo /wd4244 /wd4267 /Ob2 /GL  %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS=1;_CRT_NONSTDC_NO_WARNINGS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PrecompiledHeader></PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(IntDir)MeshBaker.compile.pdb</ProgramDataBaseFileName>
+      <DiagnosticsFormat>Caret</DiagnosticsFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS=1;_CRT_NONSTDC_NO_WARNINGS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(OutDir)MeshBaker.pdb</ProgramDatabaseFile>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <OutputFile>$(OutDir)MeshBaker.exe</OutputFile>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <TargetMachine>MachineX64</TargetMachine>
+      <AdditionalOptions>/LTCG %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\code\tools\mesh_baker\shared.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\code\tools\mesh_baker\export.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\tools\mesh_baker\import.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\tools\mesh_baker\main.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\common\parsing.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\win32\win32_api.cpp">
+    </ClCompile>
+    <ClCompile Include="..\..\code\common\shared.cpp">
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

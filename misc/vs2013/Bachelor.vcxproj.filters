@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="code">
+      <UniqueIdentifier>{803E957C-6C75-960D-1562-7C100178120F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\common">
+      <UniqueIdentifier>{C5BD608E-3173-D983-BA67-D35A261CD087}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\imgui">
+      <UniqueIdentifier>{37506ECE-2308-B01B-8C0F-897778E64A0C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\renderer">
+      <UniqueIdentifier>{734B4981-DF0B-C5B7-A846-0E3514C60994}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\scene">
+      <UniqueIdentifier>{0AC01DCF-F677-5F1C-5F7F-38784B56FA0C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\win32">
+      <UniqueIdentifier>{CF8A69CF-BB42-AB1C-244A-84781021460D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\shaders">
+      <UniqueIdentifier>{06E7E918-F249-79BD-9BCF-B17387114540}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="txt">
+      <UniqueIdentifier>{45B0880B-B1B9-887C-3A35-9F7CA63D947C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\code\shaders\cone_tracing.hlsli">
+      <Filter>code\shaders</Filter>
+    </None>
+    <None Include="..\..\code\shaders\deferred_options.hlsli">
+      <Filter>code\shaders</Filter>
+    </None>
+    <None Include="..\..\code\shaders\material_flags.hlsli">
+      <Filter>code\shaders</Filter>
+    </None>
+    <None Include="..\..\code\shaders\shader_constants.hlsli">
+      <Filter>code\shaders</Filter>
+    </None>
+    <None Include="..\..\code\shaders\shared.hlsli">
+      <Filter>code\shaders</Filter>
+    </None>
+    <None Include="..\..\code\shaders\voxelization.hlsli">
+      <Filter>code\shaders</Filter>
+    </None>
+    <None Include="..\..\code\shaders\voxel_types.hlsli">
+      <Filter>code\shaders</Filter>
+    </None>
+    <None Include="..\premake4.lua" />
+    <None Include="..\txt\last_todo.txt">
+      <Filter>txt</Filter>
+    </None>
+    <None Include="..\txt\new_todo.txt">
+      <Filter>txt</Filter>
+    </None>
+    <None Include="..\txt\notes.txt">
+      <Filter>txt</Filter>
+    </None>
+    <None Include="..\txt\notes_myT.txt">
+      <Filter>txt</Filter>
+    </None>
+    <None Include="..\txt\todo.txt">
+      <Filter>txt</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\code\common\dynamic_array.h">
+      <Filter>code\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\common\math.h">
+      <Filter>code\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\common\shared.h">
+      <Filter>code\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\common\static_array.h">
+      <Filter>code\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\common\static_hash_map.h">
+      <Filter>code\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\imgui\imconfig.h">
+      <Filter>code\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\imgui\imgui.h">
+      <Filter>code\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\imgui\imgui_impl_dx11.h">
+      <Filter>code\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\imgui\imgui_impl_win32.h">
+      <Filter>code\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\imgui\imgui_internal.h">
+      <Filter>code\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\imgui\imstb_rectpack.h">
+      <Filter>code\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\imgui\imstb_textedit.h">
+      <Filter>code\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\imgui\imstb_truetype.h">
+      <Filter>code\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\renderer\d3d11.h">
+      <Filter>code\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\renderer\d3d11sdklayers.h">
+      <Filter>code\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\renderer\d3d11_3.h">
+      <Filter>code\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\renderer\r_private.h">
+      <Filter>code\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\renderer\r_public.h">
+      <Filter>code\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\renderer\r_voxel_private.h">
+      <Filter>code\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\scene\s_private.h">
+      <Filter>code\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\scene\s_public.h">
+      <Filter>code\scene</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\code\common\math.cpp">
+      <Filter>code\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\common\parsing.cpp">
+      <Filter>code\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\common\shared.cpp">
+      <Filter>code\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\imgui\imgui.cpp">
+      <Filter>code\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\imgui\imgui_demo.cpp">
+      <Filter>code\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\imgui\imgui_draw.cpp">
+      <Filter>code\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\imgui\imgui_impl_dx11.cpp">
+      <Filter>code\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\imgui\imgui_impl_win32.cpp">
+      <Filter>code\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\imgui\imgui_tables.cpp">
+      <Filter>code\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\imgui\imgui_widgets.cpp">
+      <Filter>code\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_assets.cpp">
+      <Filter>code\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_d3d11.cpp">
+      <Filter>code\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_debug_viz.cpp">
+      <Filter>code\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_deferred_shading.cpp">
+      <Filter>code\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_filter.cpp">
+      <Filter>code\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_gbuffer.cpp">
+      <Filter>code\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_hiz.cpp">
+      <Filter>code\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_imgui.cpp">
+      <Filter>code\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_main.cpp">
+      <Filter>code\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_pipelines.cpp">
+      <Filter>code\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_render_command_queue.cpp">
+      <Filter>code\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_shadows.cpp">
+      <Filter>code\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_ssso.cpp">
+      <Filter>code\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_voxel_emittance_bounce.cpp">
+      <Filter>code\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_voxel_emittance_format_fix.cpp">
+      <Filter>code\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_voxel_emittance_mip_downsample.cpp">
+      <Filter>code\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_voxel_emittance_opacity_fix.cpp">
+      <Filter>code\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_voxel_emittance_voxelization.cpp">
+      <Filter>code\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_voxel_main.cpp">
+      <Filter>code\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_voxel_opacity_mip_downsample.cpp">
+      <Filter>code\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_voxel_opacity_voxelization.cpp">
+      <Filter>code\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_voxel_vis.cpp">
+      <Filter>code\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\renderer\r_voxel_voxelization_fix.cpp">
+      <Filter>code\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\scene\s_assets.cpp">
+      <Filter>code\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\scene\s_main.cpp">
+      <Filter>code\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\win32\win32_api.cpp">
+      <Filter>code\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\win32\win32_main.cpp">
+      <Filter>code\win32</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\code\shaders\dear_imgui.hlsl">
+      <Filter>code\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\dear_imgui.hlsl">
+      <Filter>code\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\debug_viz.hlsl">
+      <Filter>code\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\debug_viz.hlsl">
+      <Filter>code\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\opacity_voxelization.hlsl">
+      <Filter>code\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\opacity_voxelization.hlsl">
+      <Filter>code\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\opacity_voxelization.hlsl">
+      <Filter>code\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\opacity_voxelization.hlsl">
+      <Filter>code\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\opacity_voxelization.hlsl">
+      <Filter>code\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\emittance_voxelization.hlsl">
+      <Filter>code\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\emittance_voxelization.hlsl">
+      <Filter>code\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\emittance_voxelization.hlsl">
+      <Filter>code\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\emittance_voxelization.hlsl">
+      <Filter>code\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\emittance_voxelization.hlsl">
+      <Filter>code\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\voxel_vis.hlsl">
+      <Filter>code\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\voxel_vis.hlsl">
+      <Filter>code\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\voxel_vis.hlsl">
+      <Filter>code\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\geometry_pass.hlsl">
+      <Filter>code\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\geometry_pass.hlsl">
+      <Filter>code\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\deferred_shading.hlsl">
+      <Filter>code\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\deferred_shading.hlsl">
+      <Filter>code\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\shadows.hlsl">
+      <Filter>code\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\shadows.hlsl">
+      <Filter>code\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\shadows.hlsl">
+      <Filter>code\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\opacity_mip_downsample.hlsl">
+      <Filter>code\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\emittance_mip_downsample.hlsl">
+      <Filter>code\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\emittance_format_fix.hlsl">
+      <Filter>code\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\emittance_opacity_fix.hlsl">
+      <Filter>code\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\emittance_bounce.hlsl">
+      <Filter>code\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\voxelization_fix.hlsl">
+      <Filter>code\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\hiz.hlsl">
+      <Filter>code\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\ssso.hlsl">
+      <Filter>code\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\ssso.hlsl">
+      <Filter>code\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\ssso_filter.hlsl">
+      <Filter>code\shaders</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\..\code\shaders\ssso_filter.hlsl">
+      <Filter>code\shaders</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

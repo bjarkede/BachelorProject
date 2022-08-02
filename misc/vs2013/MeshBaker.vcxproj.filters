@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="code">
+      <UniqueIdentifier>{803E957C-6C75-960D-1562-7C100178120F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\tools">
+      <UniqueIdentifier>{6D9736CF-594F-781C-C256-5178AE2D130D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\tools\mesh_baker">
+      <UniqueIdentifier>{1A470C6C-86B3-C766-4FA7-5FC4BBD2E9CE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\common">
+      <UniqueIdentifier>{C5BD608E-3173-D983-BA67-D35A261CD087}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="code\win32">
+      <UniqueIdentifier>{CF8A69CF-BB42-AB1C-244A-84781021460D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\code\tools\mesh_baker\shared.h">
+      <Filter>code\tools\mesh_baker</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\code\tools\mesh_baker\export.cpp">
+      <Filter>code\tools\mesh_baker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\tools\mesh_baker\import.cpp">
+      <Filter>code\tools\mesh_baker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\tools\mesh_baker\main.cpp">
+      <Filter>code\tools\mesh_baker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\common\parsing.cpp">
+      <Filter>code\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\win32\win32_api.cpp">
+      <Filter>code\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\common\shared.cpp">
+      <Filter>code\common</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
