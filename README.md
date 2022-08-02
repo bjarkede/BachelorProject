@@ -48,6 +48,8 @@ The command-line tools have no third-party dependencies.
 
 A lot of the technical details are covered in my [thesis](https://bjarkede.com/writeups/bachelor-thesis-first-edition/), see Chapter 4 (Architecture) and Chapter 5 (Design and Implementation). Chapter 7 (Results and Dicussion) analyzes the performance of the different render passes.
 
+In addition, there's a [global illumination overview](https://bjarkede.com/writeups/bachelor-project-overview/) post on my website.
+
 ## Building from Source
 
 ### Windows + Visual C++
