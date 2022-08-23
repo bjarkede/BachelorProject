@@ -4,6 +4,8 @@ This is a toy/experimental real-time global illumination renderer written in C++
 
 It started as part of my [bachelor thesis](https://bjarkede.com/writeups/bachelor-thesis-first-edition/) where the goal was to create a real-time renderer that supported global illumination.
 
+![](https://bjarkede.com/gi_overview/screenshots/image1_hu88218d72c5defce792037be31f71092d_186361_1600x1600_fit_q50_box.jpg)
+
 ## Features
 
 * Deferred rendering
