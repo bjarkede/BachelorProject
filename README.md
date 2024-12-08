@@ -2,7 +2,7 @@
 
 This is a toy/experimental real-time global illumination renderer written in C++ and using Direct3D 11. It's a hobby project, which means that it sometimes chooses the simplest options, and is perpetually a work in progress. 
 
-It started as part of my [bachelor thesis](https://bjarkede.com/writeups/bachelor-thesis-first-edition/) where the goal was to create a real-time renderer that supported global illumination.
+It started as part of my [bachelor thesis](https://bjarkede.com/documents/bachelor_thesis_bjarke_damsgaard_eriksen.pdf) where the goal was to create a real-time renderer that supported global illumination.
 
 ![](https://bjarkede.com/gi_overview/screenshots/image1_hu88218d72c5defce792037be31f71092d_186361_1600x1600_fit_q50_box.jpg)
 
@@ -48,7 +48,7 @@ The command-line tools have no third-party dependencies.
 
 ## Technical Notes
 
-A lot of the technical details are covered in my [thesis](https://bjarkede.com/writeups/bachelor-thesis-first-edition/), see Chapter 4 (Architecture) and Chapter 5 (Design and Implementation). Chapter 7 (Results and Dicussion) analyzes the performance of the different render passes.
+A lot of the technical details are covered in my [thesis](https://bjarkede.com/documents/bachelor_thesis_bjarke_damsgaard_eriksen.pdf), see Chapter 4 (Architecture) and Chapter 5 (Design and Implementation). Chapter 7 (Results and Dicussion) analyzes the performance of the different render passes.
 
 In addition, there's a [global illumination overview](https://bjarkede.com/writeups/bachelor-project-overview/) post on my website.
 
