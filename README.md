@@ -50,7 +50,7 @@ The command-line tools have no third-party dependencies.
 
 A lot of the technical details are covered in my [thesis](https://bjarkede.com/documents/bachelor_thesis_bjarke_damsgaard_eriksen.pdf), see Chapter 4 (Architecture) and Chapter 5 (Design and Implementation). Chapter 7 (Results and Dicussion) analyzes the performance of the different render passes.
 
-In addition, there's a [global illumination overview](https://bjarkede.com/p/bachelor-project/) post on my website.
+In addition, there's a [global illumination overview](https://bjarkede.com/posts/2022/bachelor_thesis_gi_overview/) post on my website.
 
 ## Building from Source
 
